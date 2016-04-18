@@ -1,0 +1,38 @@
+
+
+* {
+	outline: 1px solid red;
+}
+
+
+p.captionText {
+	font-size: 8px;
+}
+
+.articleAuthor{
+	font-size: 9px;
+}
+
+.articleAuthor span {
+	text-transform: uppercase;
+}
+
+
+
+
+
+#opinion p {
+	font-size: 10px;
+}
+#opinion h6 {
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+#opinion li {
+	font-size: 10px;
+}
+
+#opinion ul {
+	padding-left: 5px;
+}
