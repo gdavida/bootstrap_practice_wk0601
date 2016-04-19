@@ -5,34 +5,69 @@
 }
 
 
-p.captionText {
-	font-size: 8px;
+
+.topQuickSelect h4 {
+	display: inline;
 }
 
-.articleAuthor{
-	font-size: 9px;
+.versions li {
+	display: inline;
 }
 
-.articleAuthor span {
-	text-transform: uppercase;
+.title {
+	display: inline-flex;
+}
+
+.titleMain{
+	display: block;
+}
+
+.titleMain li {
+	display: inline;
 }
 
 
 
-
-
-#opinion p {
-	font-size: 10px;
-}
-#opinion h6 {
-	font-size: 9px;
-	text-transform: uppercase;
+.topicNav ul li{
+	display: inline;
 }
 
-#opinion li {
-	font-size: 10px;
+
+.bannerAd {
+	display: inline-flex;
+	width: 100%;
 }
 
-#opinion ul {
-	padding-left: 5px;
+.bannerAd li {
+	display: inline-flex;
+}
+
+.bannerAd button {
+	border-radius: 15px;
+	width:30%;
+	margin-left: 20%;
+}
+
+
+.articleNewspaperLayout {
+	display: inline-flex;
+}
+
+.news-col-1 {
+	width: 20%;
+}
+
+.news-col-2 {
+	width: 40%;
+}
+
+.news-col-3 {
+	width: 40%;
+}
+
+.opinionPages {
+	display: inline-flex;
+}
+.opinion-col-1, .opinion-col-2 {
+	width: 50%;
 }

@@ -13,7 +13,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>No Bootstrap NYT</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,68 +27,54 @@
     <![endif]-->
   </head>
   <body>
-  <div class = "container">
+
     <!--  TOP QUICK SELECTION SECTION -->
-    <div class = "row">
-      <div class = "col-xs-3">
-        <div class="row">
-          <div class = "col-xs-6">
-            <p>Sections</p>
-          </div>
-          <div class = "col-xs-6">
-            <p>Search</p>
-          </div>
-        </div>
+    <section class="topQuickSelect">
+      <h4>Sections</h4>
+      <h4>Search</h4>
+      <button>Subscribe Now</button>
+      <button>Log In</button>
+      <h4>Gear</h4>
+    </section>
+
+
+  <!--  VERSIONS SECTION -->
+    <section class="versions">
+      <div>
+        <ul>
+          <li>U.S.</li>
+          <li>International</li>
+          <li>Mnd</li>
+          <li>Espanol</li>
+        </ul>
       </div>
-      <div class = "col-xs-5"></div>
-      <div class = "col-xs-4">
-        <div class="row">
-          <div class = "col-xs-6">
-            <p>Subscribe </p>
-          </div>
-          <div class = "col-xs-4">
-            <p>Log In</p>
-          </div>
-          <div class = "col-xs-2">
-            <p>Gear</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
+
   <!--  TITLE SECTION -->
-    <div class = "row">
-      <div class="col-xs-3">
+    <section class= "title">
+      <div>
+        <img src="http://lorempixel.com/180/100/abstract/3" class="titleAdImg">
       </div>
-      <div class="col-xs-6">
-        <div class = "row">
-          <div class="col-xs-12">
-            <h3>The New York Times</h3>
-          </div>
-        </div>
-        <div class = "row">
-          <div class="col-xs-4">
-            <p>Monday, April 18, 2016</p>
-          </div>
-          <div class="col-xs-2">
-            <p>Today's Paper</p>
-          </div>
-          <div class="col-xs-2">
-            <p>Video</p>
-          </div>
-          <div class="col-xs-2">
-            <p>52 F</p>
-          </div>
-          <div class="col-xs-2">
-            <p>Dow +0.58%</p>
-          </div>
-        </div>
+      <div class="titleMain">
+        <h1>The New York Times</h1>
+        <ul class="todaysInfoBar">
+          <li>Monday, April 18, 2016</li>
+          <li>Today's Paper</li>
+          <li>Video</li>
+          <li>52 F</li>
+          <li>Dow + 0.58%</li>
+        </ul> 
       </div>
-      <div class="col-xs-3">
+      <div>
+        <img src="http://lorempixel.com/180/100/abstract/8" class="titleAdImg">
       </div>
-    </div>
+    </section>
+
+
   <!--  TOPIC SECTION -->
-    <div class = "row">
-      <ul class="list-inline">
+    <section class= "topicNav">
+      <ul>
         <li>World</li>
         <li>U.S.</li>
         <li>Politics</li>
@@ -108,79 +94,81 @@
         <li>Real Estate</li>
         <li>ALL</li>
       </ul>
-    </div>
+    </section>
+
+
   <!--  BANNER AD SECTION -->
-    <div class = "row">
-      <div class="col-xs-8">
-        <div class="row">
-          <div class="col-xs-4">
-            <h5>The New York Times</h5>
-          </div>
-          <div class="col-xs-4">
-            <h5>Get 4 weeks<br>of the Times.<br>Just 99.</h5>
-          </div>
-          <div class="col-xs-4">
-            <h4>Real news deserves<br>real journalism.</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-4">
-        <button type="button" class="btn btn-primary btn-sm">Start Now</button>
-      </div>
-    </div>
+    <section class="bannerAd">
+      <ul>
+        <li>The New York Times</li>
+        <li>Get 4 weeks<br>of THe Times.<br>Just 99.</li>
+        <li>Real news deserves<br>real journamlism.</li>
+      </ul>
+      <button>Start Now</button>
+    </section>
+
   <!--  ARTICLES NEWSPAPER LAYOUT-->
-    <div class = "row">
-    
-      <div class="col-xs-8">
-        <div class="row">
-          <div class="col-xs-4">
-            <h4>Supreme Court Sharply Divided on Obama Plan for Immigrants</h4>
+    <section class="articleNewspaperLayout">
+      <!-- LEFT COLUMN OF NEWS -->
+      <div class="news-col-1">
+        <h3 class="headline">
+          Supreme Court Sharply Divided on Obama Plan for Immigranta
+        </h3>
+        <h6 class="byline">
+          By <span class="author">Adam Luptak</span> and <span class="author">Michael D. Shear</span><span class="time">12:45 p.m. ET</span>
+        </h6>
+        <p>During an extended arguement, the justices occasionally paused to acknowledge realities outside the courtroom in connection with the president's plan to shiel millions from deportation.</p>
+        <h6 class ="comments">
+          310 Comments
+        </h6>
+        <ul>
+          <li>What to Expect: Two Analysts on a 'Blockbuster' Case</li>
+          <li>Challenge to Google Cooks Is Declined by Court</li>
+        </ul>
+      </div>
+
+      <!-- MIDDLE FEATURE COLUMN OF NEWS -->
+      <div class="news-col-2">
+        <img src="http://lorempixel.com/360/200/abstract">
+        <h6 class="photoCredit">She lives in Turkey and was hit by a car when she was a baby. Shter she survived, people started calling her Lucky.<br>
+        <span class="photoAuthor">Elkin Kucuk</span></h6>
+        <h4>The World Is Full of Dogs Without Collars</h4>
+        <h6 class="byline">
+          By <span class="author">James Gorman</span>
+        </h6>
+        <p>Three-quarters of the billion dogs on the planet are not pets. A new book argues that they are more than strays and may tell us much about the nature of dogs.</p>
+        <ul>
+          <li>Readers Respond: Dogs That Don't Belong to Anyone</li>
+      </div>
+
+      <!-- RIGHT OPINION COLUMN OF NEWS -->
+      <div class="news-col-3">
+        <h5>The Opinion Pages</h5>
+        <div class="opinionPages">
+        <!-- TOP OPINION SECTION OF COLUMN 3 -->
+          <div class="opinion-col-1">
+            <h6>Room for Debate</h6>
+            <h5>Turning Off Comments</h5>
+            <p>Have trolls made it impossible for digital media to let readers weigh in on stories?</p>
+            <ul>
+              <li>Editorial: Transgender Bathroom Hysteria, Cont'd</li>
+              <li>Blow: Sanders Dismisses the Deep South</li>
+              <li>Facebook Live Q&A with The Click Effect filmmakers at 2 p.m. ET</li>
+            </ul> 
           </div>
-          <div class="col-xs-8 FeatureStory">
-            <img src="http://lorempixel.com/500/250/abstract/1/" class="img-responsive">
-            <p class="captionText">She lives in Turkey and was hit by a car when she was a baby. After she survived, people started calling her Lucky.<br><span class="photoCredit">Ekin Kucuk</span</p>
-            <h5>The World Is Full of Dogs Without Collars</h5>
-            <h6 class="articleAuthor">By <span>James Gorman</span></h6>
+          <div class="opinion-col-2">
+            <h6>Room for Debate</h6>
+            <h5>Turning Off Comments</h5>
+            <p>Have trolls made it impossible for digital media to let readers weigh in on stories?</p>
+            <ul>
+              <li>Editorial: Transgender Bathroom Hysteria, Cont'd</li>
+              <li>Blow: Sanders Dismisses the Deep South</li>
+              <li>Facebook Live Q&A with The Click Effect filmmakers at 2 p.m. ET</li>
+            </ul> 
           </div>
         </div>
       </div>
-      <div class="col-xs-4">
-        <div class="row">
-          <h5>The Opinion Pages</h5>
-        </div>
-        <div class="row" id="opinion">
-          <div class="col-xs-6">
-            <h6>Room for Debate</h6>
-            <h5>Turning Off Comments</h5>
-            <p>Have trolls made it impossibe for digital media to let readers weigh in on stores?</p>
-            <ul>
-              <li>Editorial: Transgender Bathroom Hysteria, Cont'd</li>
-              <li>Blow: Sanders Dismissed the Deep South</li>
-              <li>Facebook Live Q&A with The Click Effect filmmakers at 2 p.m. ET >></li>
-            </ul>
-          </div>
-          <div class="col-xs-6">
-            <h6>Room for Debate</h6>
-            <h5>Turning Off Comments</h5>
-            <p>Have trolls made it impossibe for digital media to let readers weigh in on stores?</p>
-            <ul>
-              <li>Editorial: Transgender Bathroom Hysteria, Cont'd</li>
-              <li>Blow: Sanders Dismissed the Deep South</li>
-              <li>Facebook Live Q&A with The Click Effect filmmakers at 2 p.m. ET >></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            
-          </div>
-        </div>
-        <div class="row"></div>
-        <div class="row"></div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
